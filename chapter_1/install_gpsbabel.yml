@@ -1,0 +1,6 @@
+---
+- hosts: debian
+  sudo: yes
+  tasks:
+      - name: Install / update gpsbabel
+        apt: update_cache=yes name=gpsbabel state=latest 
